@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>로그인</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="../favicon.png" rel="icon" type="image/png" />
+    <link href="../header.css" rel="stylesheet" />
+    <link href="login.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="p-3">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li>
+                            <a class="로고 nav-link px-2 " href="../index.html">MusicStore</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-end">
+                <button class="btn 로그인버튼" onclick="window.location.href='../login/login.html'" type="button">
+                    로그인
+                </button>
+                <button class="btn 회원가입버튼" onclick="window.location.href='../signup/signup.html'" type="button">
+                    회원가입
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="p-5 mb-4 rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">로그인</h1>
+                <form class="로그인폼">
+                    <label for="아이디" id="아이디라벨">아이디</label><input id="아이디" name="아이디" placeholder="아이디" required type="text" /> <label for="비밀번호" id="비밀번호라벨">비밀번호</label><input id="비밀번호" name="비밀번호" placeholder="비밀번호" required type="password" />
+                    <button class="로그인" title="로그인" type="submit">로그인</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
